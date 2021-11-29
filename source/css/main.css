@@ -352,12 +352,12 @@ h5, h6          { font-weight: bolder }
     height: 100%;
     top: 0;
     left: 0;
-    background: #ffffff;
+    background: #000000;
     opacity: 0;
 }
 
 .main .work a:hover .caption{
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .work .caption .work_title{
@@ -375,12 +375,12 @@ h5, h6          { font-weight: bolder }
     max-width: 90%;
     padding: 20px 0;
     z-index: 77;
-    color: #454545;
-    font-family: "raleway-regular", arial;
-    font-size: 16px;
+    color: #FFFFFF;
+    font-family: "raleway", arial;
+    font-size: 24px;
     letter-spacing: .5px;
-    border-bottom: 1px solid #bfbbbb;
-    border-top: 1px solid #bfbbbb;
+    border-bottom: 4px solid #bfbbbb;
+    border-top: 2px solid #bfbbbb;
 }
 
 .main .gallery-container{
@@ -1563,3 +1563,41 @@ figure.highlight.yml .number,
 .codeblock.yml .number {
     color: #0086b3;
 }
+
+#itch {
+ width: 156px;
+ height: 48px;
+ display: inline-block;
+ background-image : url('../img/press-kit/itch_normal-fs8.png');
+ }
+
+#itch:hover {
+ width: 156px;
+ height: 48px;
+ display: inline-block;
+ background-image : url('../img/press-kit/itch_hover-fs8.png');
+ }
+ 
+#playstore {
+ width: 162px;
+ height: 48px;
+ display: inline-block;
+ background-image : url('../img/press-kit/playstore-fs8.png');
+ }
+
+
+#gameurl:before {
+  content: attr(title);
+  display: block;
+}
+
+#gameurl ul {
+  text-align: center;
+  padding: 0;
+}
+
+#gameurl li {
+  display: inline-block;
+  vertical-align: top;
+}
+

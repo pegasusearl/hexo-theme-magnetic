@@ -18,6 +18,19 @@
             <!-- Content -->
             <%- item.content %>
 
+
+			<br>
+				<ul id="gameurl">
+							   	<% if (item.itch_url) { %>
+									<li><a id="itch"href="<%- item.itch_url %>"  target="_blank" data-title="Itch.io"></a></li>
+								<% } %>
+								<% if (item.playstore_url) { %>
+									<li><a href="<%- item.playstore_url %>" id="playstore" target="_blank" data-title="Google Playstore"></a></li>
+								<% } %>
+				</ul>
+			<br>
+			
+
             <!-- Tags -->
             <%- partial('article-tags') %>
 
